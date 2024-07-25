@@ -2,6 +2,8 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
 import CardTotal from "../components/CardTotal";
+import { Link, NavLink } from 'react-router-dom';
+
 
 
 

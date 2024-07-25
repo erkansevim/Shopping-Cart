@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -12,16 +13,16 @@ const Navbar = () => {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <Link to="/" class="nav-link active" aria-current="page" href="#">Home</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">New Product</a>
+            <Link to="/newProduct" class="nav-link" href="#">New Product</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product List</a>
+            <Link to="/productList" class="nav-link" href="#">Product List</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <Link to="/about" class="nav-link" href="#">About</Link>
           </li>
         </ul>
       </div>
